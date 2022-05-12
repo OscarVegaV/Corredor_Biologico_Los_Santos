@@ -1,0 +1,136 @@
+@font-face {
+  font-family: AXIS Extra Bold;
+  src: url(../font/Axis\ Extrabold.otf);
+}
+
+/* Inicio del home */
+#home{
+  background: #000;
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+}
+
+#navbarProyectos{
+  background: #000;
+  color: #FFF;
+  border: solid .1rem #66aa2a;
+  border-radius: 10px;
+}
+#navbarProyectos :hover{
+  background: #66aa2a;
+}
+#navbarh :hover{
+  color: #66aa2a;
+}
+
+#logo{
+  margin-top: -15px;
+  
+}
+#lupa{
+  color: #fff;
+}
+#search{
+  border: solid .1rem #66aa2a;
+  border-radius: 10px;
+}
+#navbarh :hover{
+  color: #66aa2a;
+}
+/* Fin del home */
+
+/*Inicio section Document*/
+.linkDocument:hover{
+  color: #66AA2A;
+}
+
+/*fin section Document*/
+
+/* INICIO FOOTER */
+.SectionFoother{
+  background: #000;
+  color: #FFFFFF;
+}
+.footerLine{
+  height: 0.1rem;    
+  background: white;  
+}
+.textColorLinksFoother{
+  color: #FFFFFF;
+}
+.textColorLinksFoother:hover{
+  color: #66AA2A;
+}
+/* section document */
+.sectionDocument{
+  background: #FFFFFF;
+  margin-top: 125px;
+  color: #66aa2a;  
+}
+h1{
+  font-family: AXIS Extra Bold; 
+  text-align: center;
+}
+
+
+/*-- MEDIA QUERIES PARA RESPONSIVE --*/
+@media (max-width:1399px){  
+  #logo{
+    margin-bottom: 2rem;
+    margin-left: -.8rem;
+  }
+  /*Footer*/
+  .footerLine{
+    margin-left: -0.8rem;
+  }
+}
+/* media 992  */
+@media (max-width: 992px){
+.textColorLinksNav{
+  font-size: 12px;
+}
+.font, .fonts{
+  font-size: 10px !important;
+}
+} 
+/*media 768  */
+@media (max-width: 767px){
+  #search{
+    width: 250px;
+  }
+  /*Footer*/
+  .footerLine{
+    margin: auto;
+  }
+  .navbarSupportedContent{
+    z-index: 1000;
+  }
+} 
+/* media 576 */
+@media (max-width:576px){  
+  #logo{
+    margin-top: -0.6rem;
+    transform: scale(1.1);
+  }
+  .sectionDocument{
+    font-size: small;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  h1{
+    font-size: x-large;
+  }  
+}
+/* media 468 */
+@media (max-width:468px){
+  #logo{
+    padding-left: 1rem;
+  } 
+  .sectionDocument{
+    font-size: x-small;
+  }
+  h1{
+    font-size: medium;
+  }
+}

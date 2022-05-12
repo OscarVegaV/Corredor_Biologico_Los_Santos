@@ -1,0 +1,762 @@
+    @font-face {
+    font-family: AXIS Extra Bold;
+    src: url(../font/Axis\ Extrabold.otf);
+}
+:root{
+    --main-font-family: AXIS Extra Bold;
+    --main-color: #66AA2A;
+    /* variables de textos */
+    --main-text-menu: 2rem;
+    --main-title: 4rem;
+    --main-subtitles: 2.5rem;
+    --main-paragraph: 1.5rem;
+    /* variables del button  */
+    --main-button-color: #66AA2A;
+    --main-button-border-radius: 5px;
+    --main-button-text-size: 1rem;
+    --main-button-text-color: #fff;
+    /* variables de espaciado */
+    --main-padding: 100px;
+}
+*{
+    transition: .2s linear;
+}
+body{
+    position: relative; 
+} 
+/* Inicio del home */
+#home{
+    background: url(../img/home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#navbarProyectos{
+    color: #FFF;
+}
+#logo{
+    margin-top: -0.1rem;
+    transform: scale(1.3);
+}
+#corredor{
+    padding: 250px 0;
+    text-align: center;
+    font-family: AXIS Extra Bold;
+}
+#corredor h1{
+    font-size: 4rem;
+    color: #66aa2a;
+}
+#corredor h2{
+    font-size: 10rem;
+}
+#corredor button{
+    color: #66aa2a;
+}
+#corredor span{
+    color: #fff;
+}
+#verVideo{
+    background:#66aa2a;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .6rem 1.5rem;
+    font-size: 2rem;
+    border: solid .1rem #66aa2a;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+#verVideo :hover{
+    letter-spacing: 0.2rem;
+}
+#lupa{
+    color: #fff;
+}
+#search{
+    border: solid .1rem #66aa2a;
+    border-radius: 10px;
+}
+#navbarProyectos{
+    background: #000;
+    color: #FFF;
+    border: solid .1rem #66aa2a;
+    border-radius: 10px;
+}
+#navbarProyectos :hover{
+    background: #66aa2a;
+}
+#navbarh :hover{
+    color: #66aa2a;
+}
+/* Fin del home */
+/* Seccion Sobre Nosotros */
+/* Titulo */
+#sobre-nosotros{
+    position: relative;
+    border: none;
+}
+#sobre-nosotros h1{
+    font-family: var(--main-font-family);
+    color: var(--main-color);
+    font-size: 2rem;
+}
+#sobre-nosotros .title-1{
+    color: #000;
+}
+/* Parrafo */
+.parrafocbls{
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: Roboto;
+    font-size: 20px;
+}
+.hoja{
+    width: 50px;
+    height: 50px;
+}
+/* Button */
+.mas{
+    font-size: 1.2rem;
+    font-family: var(--main-font-family);
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 10px;
+    padding: .6rem 1.5rem;
+}
+.mas:hover{
+    letter-spacing: 0.2rem;
+}
+/* Box-text */
+#box-text p strong{
+    color: var(--main-color);
+}
+#box-text{
+    display: none;
+    background-color: rgb(255, 254, 254);
+    position: absolute;
+    z-index: 10; 
+    top: 75px;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* margin-left: 0.5rem;
+    margin-right: 0.5rem; */
+    margin-top: 16px;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/* width */
+#box-text::-webkit-scrollbar {
+    width: 12px;
+}
+  /* Track */
+#box-text::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+  /* Handle */
+#box-text::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+}
+#mark{
+    display: none;
+    background-color: #fff;
+    color: #000;
+    margin-top: 120px;
+    /* width: 20px;
+    height: 20px; */
+    margin-right: 10px;
+    /* position: fixed; */
+    z-index: 100;
+}
+/* Inicio de Proyectos */
+#tituloProyecto{
+    font-family: AXIS Extra Bold;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    color: #66AA2A !important;
+    margin-top: 20px;
+    text-align: center;
+}
+.fotob{
+    width: 350px;
+    height: 520px;
+    margin-bottom: 20px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#proyectosh :hover{
+    transform: scale(1.03);
+}
+.textos{
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: 75%; 
+}
+.textos p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+}
+.textos h3{
+    font-family: AXIS Extra Bold;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 700;
+}
+#botonMenu{
+    background:#66aa2a;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .6rem 1.5rem;
+    font-size: 1rem;
+    border: solid .1rem #66aa2a !important;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s linear;
+}
+#boton :hover{
+    letter-spacing: 0.2rem;
+}
+/* Fin de Proyectos */
+/*Style del Noticias*/
+#botones{
+    background-color: #66aa2a;
+    border: #66aa2a;
+    color: white;
+    justify-content: left;
+    box-shadow: none;
+}
+#flechas{
+    border: #66aa2a;
+}
+.imgslider{
+    width: 750px;
+    height: 350px;
+    margin-top: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #66aa2a;
+}
+.textoderecho{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+.carousel-indicators button {
+    height: 10px !important;
+    width: 10px !important;
+    margin: 0 10px !important;
+    border-radius: 100%;
+    background-color: #66aa2a !important;
+    margin-bottom: -120px !important;
+    z-index: 1000;
+}
+.flechacolor{
+    font-size: 50px !important;
+    color: #66aa2a !important;
+    margin-left: -15px !important;
+}
+/* Fin de sytle carousel */
+/* Seccion Galeria y Documentos */
+.SeccionGaleYDoc{
+    background: #000;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+.fontSizeGYD{
+    font-family: AXIS Extra Bold;
+}
+.icono{
+    font-size: 100px;
+    color: #FFFFFF;
+    border-radius: 500px;
+    z-index: 1000;
+}
+.circulo{
+    width: 150px;
+    height: 150px;
+    border-radius: 500px;
+}
+.circulo:hover{
+    background: #66AA2A;
+}
+.linkGYD{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.linkGYD:hover{
+    color: #66AA2A;
+}
+.lineaGYD{
+    background: #66AA2A;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 5px;
+}
+
+/* INICIO DE COMENTARIOS */
+.carousel-indicators{
+    background-color: #66aa2a;
+    bottom: -3rem !important;
+    color: #66aa2a !important;
+}
+.carousel-indicators button {
+    height: 10px !important;
+    width: 10px !important;
+    margin: 0 10px !important;
+    border-radius: 100%;
+    background-color: #66aa2a !important;
+    margin-bottom: -120px !important;
+    z-index: 1000;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2366aa2a' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    position: relative;
+    left: -45%;
+} 
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2366aa2a' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    position: relative;
+    right: -45%;
+}
+
+#NombreComentario{
+    color: #66aa2a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 20px;
+}
+#ComillasComentario{
+    color: #66aa2a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px !important;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 5px;
+}
+#imgComentario{
+    width: 8rem !important;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -22px;
+    align-items: center !important;
+}
+#parComentario{
+    margin-top: -20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px !important;
+}
+
+/* INICIO FORMULARIO */
+#FormularioContacto{
+    background: url(../img/fondo-contacto.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.colibrie{
+    position: relative;
+    right: 30%;
+}
+#tituloH2 {
+	font-family: AXIS Extra Bold;
+	font-size: 4rem;
+	font-style: normal;
+	font-weight: 700;
+	color: #ffffff;
+	margin-top: 20px;
+	text-align: center;
+}
+#input1 {
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+}
+#input2 {
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+}
+#input3 {
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+}
+#Textarea1 {
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+}
+#Textarea2 {
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+}
+#botonEnviar {
+	background: #66aa2a;
+	margin-top: 1rem;
+	display: inline-block;
+	padding: .6rem 1.5rem;
+	font-size: 1rem;
+	border: solid .1rem #66aa2a;
+	border-radius: 10px;
+	cursor: pointer;
+	color: #fff;
+	transition: .2s linear;
+}
+#boton :hover {
+	letter-spacing: 0.2rem;
+}
+/* FIN FORMULARIO */
+/* INICIO FOOTER */
+.SeccionFoother{
+    background: #000;
+    color: #FFFFFF;
+}
+.textColorLinksFoother{
+    color: #FFFFFF;
+}
+    .textColorLinksFoother:hover{
+    color: #66AA2A;
+}
+.lineaFooter{
+    height: 0.1rem;    
+    background: white;  
+}
+/*PROYECTOS HTML*/
+#subtituloProyecto{
+    margin-top: 100px;
+    font-family: AXIS Extra Bold;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    background-color: #66AA2A !important;
+    color: #ffffff !important;
+    text-align: center;
+    padding-top: 5px;
+}
+.fotoProyectos{
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#header{
+    background-color: #000;
+    margin-top: 120px;
+}
+/*NOTICIAS HTML*/
+#titulo{
+    font-family: AXIS Extra Bold;
+    font-size: 2.50rem;
+}
+#subtitulo{
+    color:#66aa2a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+#parrafos{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+#imgnoticias{
+    width: 500px;
+    height: 300px;
+}
+
+
+/*Footer*/
+.SeccionFooter{
+    margin-top: 75px;
+    background: #000;
+    color: #FFFFFF;
+}
+/*-- MEDIA QUERIES PARA RESPONSIVE --*/
+@media (max-width:1399px){
+    h1{font-size: 6rem;
+    }
+    #corredor h1{
+        font-size: 3rem;
+    }
+    #corredor h2{
+        font-size: 7rem;
+    }
+    #logo{
+        margin-bottom: 2rem;
+    }
+    .fotob{
+        width: 315px;
+    }
+    .textos p{
+        font-size: 20px;
+    }
+    .textos h3{
+        font-size: 24px;
+    }
+    #tituloH2 {
+        font-size: 24px;
+    }
+    /* footer */
+    .lineaFooter{
+        margin-left: -0.9rem;
+    }
+}
+/* media 992  */
+@media (max-width: 992px){
+    #corredor h1{
+        font-size: 2rem;
+    }
+    #corredor h2{
+        font-size: 5rem;
+    }
+    #logo{
+        margin-top: -0.5rem;
+        transform: scale(1.3);
+        margin-bottom: 1rem;
+    }
+    #verVideo{
+        background:#66aa2a;
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .6rem 1.5rem;
+        font-size: 1.5rem;
+        border: solid .1rem #66aa2a;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;        
+    }
+    #verVideo :hover{
+        letter-spacing: 0.1rem;
+    }
+    .fotob{
+        width: 285px;
+    }
+    .textos{
+        top: 77%; 
+    } 
+    .textos p{
+        font-size: 20px;
+    }
+    .textos h3{
+        font-size: 24px;
+    }
+    .fontSizeGYD{
+        font-size: 1.5rem !important;
+    }
+    .imgslide{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    /* Actores- comentarios */
+    #NombreComentario{
+        font-size: 16px !important;
+    }
+    #ComillasComentario{
+        font-size: 42px !important;
+    }
+    #imgComentario{
+        height: 6rem;
+        width: 6rem !important;
+    }
+    #parComentario{
+        font-size: 12px !important;
+    }
+    /* footer */
+    .lineaFooter{
+        margin-left: -0.9rem;
+    }
+    .font,.fonts{
+        font-size: 12px !important;
+    }
+    #search{
+        width: 145px;
+        border-radius: 10px;
+    }
+    #parrafos{
+        font-size: 0.8rem;
+    }
+    
+} 
+/*media 768  */
+@media (max-width: 767px){
+    .fotob{
+        width: 265px;
+    }
+    .textos{
+        top: 80%; 
+    } 
+    .textos p{
+        font-size: 18px;
+    }
+    .textos h3{
+        font-size: 22px;
+    }
+    .fontSizeGYD{
+        font-size: 1.25rem !important;
+    }  
+    .colibrie{
+        display: none;
+    }
+    .textoderecho{
+        font-size: 0.8rem;
+        
+    }
+    /* Actores- comentarios */
+    #NombreComentario{
+        font-size: 12px !important;
+    }
+    #ComillasComentario{
+        font-size: 38px !important;
+    }
+    #imgComentario{
+        height: 4rem !important;
+        width: 4rem !important;
+        margin-top: -20px;
+    }
+    #parComentario{
+        font-size: 10px !important;
+        margin-top: -30px;
+    }
+    #imgnoticias{
+        max-height: fit-content;
+    }
+    /* footer */
+    .lineaFooter{
+        margin: auto;
+    }
+    #parrafos{
+        font-size: 0.7rem;
+    }
+    #titulo{
+        font-family: AXIS Extra Bold;
+        font-size: 1.75rem;
+    }
+} 
+/* media 576 */
+@media (max-width:575px){
+    #sobre-nosotros .titulo, .title-1{
+        font-size: 1.7rem;
+    }
+    .parrafocbls{
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    font-size: 14px;
+    }
+    #info{
+        font-size: 14px;
+    }
+    #mark{
+        font-size: 18px;
+        margin-bottom: -20px !important;
+        /* margin-right: 30px; */
+    }
+    .conexion{
+        font-size: 28px;
+    }
+    #corredor{
+        padding: 200px 0;
+        text-align: center;
+    }
+    #corredor h1{
+        font-size: 1.5rem;
+    }
+    #corredor h2{
+        font-size: 3rem;
+    }
+    #verVideo{
+        background:#66aa2a;
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .6rem 1.5rem;
+        font-size: 1rem;
+        border: solid .1rem #66aa2a;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        
+    }
+    #verVideo :hover{
+        letter-spacing: 0.1rem;
+    }
+    #logo{
+        margin-top: -0.6rem;
+        transform: scale(1.1);
+    }    
+    .fotob{
+        width: 350px;
+        height: 450px;
+    }
+    .textos{
+        top: 75%; 
+    }
+    #botones{
+        size: 0.7rem !important;
+    }
+     /* Actores- comentarios  */
+    #NombreComentario{
+        font-size: 14px !important;
+    }
+    #ComillasComentario{
+        font-size: 34px !important;
+    }
+    #imgComentario{
+        height: 4rem !important;
+        width: 4rem !important;
+        margin-left: 10px;
+    }
+    #parComentario{
+        font-size: 12px !important;
+    }
+    .textoderecho{
+        font-size: 0.6rem !important;
+    }
+    #botones{
+        font-size: 0.8rem !important;
+        padding: 5px !important;
+    }
+    .imgslider{
+        display: block !important;
+        margin: auto;
+        width: 85%;
+        height: 85%;
+    }
+    /* Parrafo Proyectos HTLM */
+    #proyectos{
+        font-size: 75%;
+    }
+    .fotoProyectos{
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        width: 416px;
+    }
+    /*Noticias HTML*/
+    #parrafos{
+        font-size: 0.75rem;
+        margin-top: 0px;
+    }
+    #titulo{
+        font-size: 1.25rem;
+    }
+}  
+/*media 1700
+carousel noticias*/
+
+@media (min-width:1700px){
+    .imgslider{
+        width: 100%;
+        height: 60%;
+    }
+    
+}
+/*media 2000
+carousel noticias*/
+@media(min-width:2000px){
+    .textoderecho{
+        font-size: 2rem;
+    }
+    #botonMenu{
+        font-size: 2rem;
+    }
+}
